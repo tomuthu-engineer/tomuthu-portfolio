@@ -34,7 +34,7 @@ body{
 span {
     color: #fff;
     animation: first_letter 2s ease-in-out  infinite ;
-    display: inline;
+    display: inline-block;
 }
 
 @keyframes first_letter {
