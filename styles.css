@@ -1,56 +1,191 @@
+  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    
 }
 
 body{
-    background: #000  no-repeat;
+    background: #000  no-repeat  url(images/background.jpg);
     background-size: cover;
-    /* url(images/background.gif) */
+   
 }
 
 .home_page {
     width: 100%;
     height: 100vh;
     color: #fff;
+    
 }
 
 .home_content {
     position: absolute;
-    top: 225px;
-    left: 425px;
+    top: 175px;
+    left: 380px;
     display: flex;
     flex-direction: column;
-    width: 500px;
-    height: 200px;
-    border: 2px solid #fff;
+    width: 600px;
+    height: 300px;
+    border: 2px solid hsla(0, 0%, 100%, .15);
     border-radius: 20px;
     justify-content: center;
     align-items: center;
     gap: 20px;
     color: cyan;
+    font-size: 30px;
+    font-family: 'League Spartan', sans-serif;
+    background-color: hsla(0, 0%, 100%, .01);
+    backdrop-filter: blur(10px);
+    
 }
 
 span {
-    color: #fff;
+    color: salmon
+}
+
+span:nth-child(1) {
+    color: salmon;
     animation: first_letter 2s ease-in-out  infinite ;
     display: inline-block;
+    
 }
 
 @keyframes first_letter {
    
     from{
         transform: scale(1);
+        
     }
     to{
         transform: scale(1.1);
+        /* font-size: 60px; */
+       
     }
 }
 
+.Explore_btn {
+    display: inline-block;
+    background-color: aqua;
+    font-size: 20px;
+    border-radius: 4.8rem;
+    padding: 1rem 2.8rem;
+    color: #000;
+    text-decoration-line: none;
+    font-family: 'League Spartan', sans-serif;
+    box-shadow: 0 0 1rem cyan;
+    transition: 0.5 ease;
+    
+}
+
+.Explore_btn:hover {
+    box-shadow: none;
+}
+
+.about_page {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url(images/home.jpg);
+    background-size: cover  ;
+}
+
+.nav_bar {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    top: 20px;
+    right:20px;
+}
 
 
+.nav_bar a {
+    display: inline-block;
+    border-radius: 15px;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'League Spartan', sans-serif;
+    transition: 0.5 ease;
+    font-size: 1.3rem;
+    z-index: 100;
+}
 
+.nav_bar .download_cv{
+   
+    box-shadow: 0 0 1rem  rgb(252, 255, 26);
 
+}
+.nav_bar .download_cv:hover{
+    box-shadow: none;
+    background: linear-gradient(109.6deg, rgb(252, 255, 26) 34.9%, rgb(66, 240, 233) 82.5%);
+    color: #000;
+}
 
+.nav_bar a:hover {
+    box-shadow: 0 0 1rem  rgb(252, 255, 26);   
+}
 
+.about_content {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+ .my_image img {
+    /* background: transparent; */
+    position:absolute;
+    width: auto;
+    height: 50vh;
+    top: 200px;
+    left: 100px;
+    border-radius: 50%;
+    border: 10px solid #9acd32;
+ }
+
+ .skill {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 20px;
+    width: 500px;
+    font-size: 130px;
+    left:700px;
+    top: 120px;
+    z-index: 100;
+ }
+
+ .skill i {
+    /* display: inline-flexbox; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: transparent;
+    width: 8rem;
+    height: 8rem;
+    color:  rgb(252, 255, 26);
+    border: 4px solid  rgb(252, 255, 26);
+    padding: 5px 5px;
+ }
+
+ .skill i:hover {
+    background: linear-gradient(109.6deg, rgb(252, 255, 26) 34.9%, rgb(66, 240, 233) 82.5%);
+    color: #323946;
+    box-shadow: 0 0 16px rgb(252, 255, 26);
+ }
+
+ /* project section Design */
+ /* .project_page {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+
+} */
