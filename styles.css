@@ -84,12 +84,14 @@ span:nth-child(1) {
     box-shadow: none;
 }
 
+/* About page  */
+
 .about_page {
     position: absolute;
     width: 100%;
     height: 100vh;
     background: url(images/home.jpg);
-    background-size: cover  ;
+    background-size: cover;
 }
 
 .nav_bar {
@@ -163,7 +165,6 @@ span:nth-child(1) {
  }
 
  .skill i {
-    /* display: inline-flexbox; */
     justify-content: center;
     align-items: center;
     border-radius: 50%;
@@ -182,10 +183,36 @@ span:nth-child(1) {
  }
 
  /* project section Design */
- /* .project_page {
+ .project_page {
     position: absolute;
+    top: 200vh;
     width: 100%;
-    height: 100vh;
-    background-color: #000;
+    min-height: 100vh;
+    background:#000 url(images/project.jpg);
+    background-size: cover;
+    
+}
 
-} */
+.project_container {
+    position: absolute;
+    display: flexbox;
+    width: 100% ;
+    flex-direction: column;
+    border: 5px solid yellow;
+}
+
+.first_project {
+    display: flex;
+    width: 100%;
+    position: relative;
+    gap: 30px;
+    justify-content: flex-start space-between;
+}
+
+.first_project_content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
