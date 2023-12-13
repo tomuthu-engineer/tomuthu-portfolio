@@ -9,7 +9,7 @@
 }
 
 body{
-    background: #000  no-repeat  url(images/background.jpg);
+    background:  no-repeat  url(images/background.jpg);
     background-size: cover;
    
 }
@@ -92,6 +92,7 @@ span:nth-child(1) {
     height: 100vh;
     background: url(images/home.jpg);
     background-size: cover;
+
 }
 
 .nav_bar {
@@ -103,6 +104,7 @@ span:nth-child(1) {
     gap: 20px;
     top: 20px;
     right:20px;
+    
 }
 
 
@@ -188,17 +190,21 @@ span:nth-child(1) {
     top: 200vh;
     width: 100%;
     min-height: 100vh;
-    background:#000 url(images/project.jpg);
+    /* background:#000 url(images/project.jpg); */
     background-size: cover;
+   
     
 }
 
 .project_container {
     position: absolute;
-    display: flexbox;
-    width: 100% ;
+    display: flex;
+    width: 80% ;
+    top: 100px;
+    left: 100px;
     flex-direction: column;
-    border: 5px solid yellow;
+    /* border: 5px solid yellow; */
+    gap: 100px;
 }
 
 .first_project {
@@ -207,6 +213,8 @@ span:nth-child(1) {
     position: relative;
     gap: 30px;
     justify-content: flex-start space-between;
+    padding: 0px 20px 0px 10px;
+    
 }
 
 .first_project_content{
@@ -216,3 +224,65 @@ span:nth-child(1) {
     gap: 20px;
     width: 100%;
 }
+
+.first_project img{
+    border-radius: 50%;
+    padding: 10px;   
+}
+
+.project_button{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 6vh; 
+
+}
+
+.btn {
+    padding: 10px ;
+    border-radius: 50px;
+}
+
+.second_project {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    position: relative;
+    gap: 20px;
+    justify-content:space-between;
+    padding: 0px 0px 0px 30px;
+    
+    
+}
+
+.second_project_content{
+    position: relative;
+    display: flex;
+    flex-direction: column ;
+    gap: 20px;
+    width: 100%;
+}
+
+.second_project img{
+    border-radius: 50%;
+    padding: 10px;   
+    border:  #9acd32;
+}
+
+.project_button{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 6vh;
+     
+
+}
+
+.btn {
+    padding: 10px ;
+    border-radius: 50px;
+    background: linear-gradient(109.6deg, rgb(252, 255, 26) 34.9%, rgb(66, 240, 233) 82.5%);
+}
+
+
+
