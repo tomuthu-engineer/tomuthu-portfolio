@@ -9,15 +9,18 @@
 }
 
 body{
-    background:  no-repeat  url(images/background.jpg);
+    background:  no-repeat  ;
     background-size: cover;
-   
+    font-family: 'League Spartan', sans-serif;
+    /* url(images/background.jpg)    */
 }
 
 .home_page {
     width: 100%;
     height: 100vh;
     color: #fff;
+    background:  #ffc107;
+   
     
 }
 
@@ -84,19 +87,35 @@ span:nth-child(1) {
     box-shadow: none;
 }
 
+/* .wave-bg {
+    display: block;
+    height: 220px;
+    width: 100%;
+    min-width: 600px;
+    transform-origin: top;
+    -webkit-animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+            animation: animateWave 2000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    background-image: url(images/wave-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 500px;
+  } */
+
+
 /* About page  */
 
 .about_page {
     position: absolute;
     width: 100%;
     height: 100vh;
-    background: url(images/home.jpg);
+    /* background: url(images/home.jpg); */
+    background: #61A3BA;
     background-size: cover;
 
 }
 
 .nav_bar {
-    position: absolute;
+    position: fixed;
     display: flex;
     width: 100%;
     align-items: center;
@@ -104,6 +123,7 @@ span:nth-child(1) {
     gap: 20px;
     top: 20px;
     right:20px;
+    z-index: 1000;
     
 }
 
@@ -112,27 +132,33 @@ span:nth-child(1) {
     display: inline-block;
     border-radius: 15px;
     padding: 10px 20px;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-family: 'League Spartan', sans-serif;
     transition: 0.5 ease;
     font-size: 1.3rem;
-    z-index: 100;
+    z-index: 100;  
+}
+
+.nav_bar a:hover {
+    box-shadow: 0 0 1rem  rgb(252, 255, 26); 
+    background: linear-gradient(109.6deg, rgb(252, 255, 26) 34.9%, rgb(66, 240, 233) 82.5%); 
+    border: 2px solid #000; 
+    border-radius: 30px;
 }
 
 .nav_bar .download_cv{
-   
-    box-shadow: 0 0 1rem  rgb(252, 255, 26);
+    background: linear-gradient(109.6deg, rgb(252, 255, 26) 34.9%, rgb(66, 240, 233) 82.5%);
+    box-shadow: 0 0 1rem   rgb(252, 255, 26);
+    border: 2px solid #000;
+    border-radius: 30px;
 
 }
 .nav_bar .download_cv:hover{
     box-shadow: none;
-    background: linear-gradient(109.6deg, rgb(252, 255, 26) 34.9%, rgb(66, 240, 233) 82.5%);
     color: #000;
-}
-
-.nav_bar a:hover {
-    box-shadow: 0 0 1rem  rgb(252, 255, 26);   
+    color: #000;
+    background: transparent;
 }
 
 .about_content {
@@ -143,7 +169,6 @@ span:nth-child(1) {
 }
 
  .my_image img {
-    /* background: transparent; */
     position:absolute;
     width: auto;
     height: 50vh;
@@ -189,8 +214,8 @@ span:nth-child(1) {
     position: absolute;
     top: 200vh;
     width: 100%;
-    min-height: 100vh;
-    /* background:#000 url(images/project.jpg); */
+    height: 200vh;
+    background: #A2C579;
     background-size: cover;
    
     
@@ -203,7 +228,6 @@ span:nth-child(1) {
     top: 100px;
     left: 100px;
     flex-direction: column;
-    /* border: 5px solid yellow; */
     gap: 100px;
 }
 
@@ -284,5 +308,72 @@ span:nth-child(1) {
     background: linear-gradient(109.6deg, rgb(252, 255, 26) 34.9%, rgb(66, 240, 233) 82.5%);
 }
 
+.btn:hover {
+    box-shadow: 0 0 16px green;
+    background: transparent;
+}
 
+/* Contact Page Design */
+.contactpage{
+    width: 100%;
+    height: 100vh;
+    background: #67729D;
+    margin-top: 300vh;
+    z-index: 1000;
+    
+}
+
+
+.sociallink {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 300px;
+    gap: 50px;
+    font-size: 50px;
+}
+
+.sociallink a {
+    display: inline-flex;
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    background: transparent;
+    color:  rgb(26, 171, 255);
+    border: 2px solid #000;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: .3s;  
+}
+
+.sociallink .instagram:hover{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    box-shadow: 0 0 16px #cc2366;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.sociallink .facebook:hover{
+    background: #1877f2;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 16px #1877f2;
+}
+
+.sociallink .linkedin:hover{
+    background: #0a66c2;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 16px #1877f2;
+}
+
+.sociallink .twitter:hover{
+    background: #1da1f2;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 16px #1877f2;
+}
 
