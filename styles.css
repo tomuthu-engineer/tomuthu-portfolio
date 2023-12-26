@@ -1,392 +1,432 @@
   @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&display=swap');
 
 
-* {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    
-}
+  * {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
 
-body{
-    
-    font-family: 'League Spartan', sans-serif;
-       
-}
+  }
 
-.home_page {
-    width: 100%;
-    height: 100vh;
-    color: #fff;
-    background:  no-repeat url(images/background.jpg)  ;
-    background-size: cover ;
-   
-    
-}
+  body {
 
-.home_content {
-    position: absolute;
-    top: 175px;
-    left: 380px;
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-    height: 300px;
-    border: 2px solid hsla(0, 0%, 100%, .15);
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    color: cyan;
-    font-size: 30px;
-    font-family: 'League Spartan', sans-serif;
-    background-color: hsla(0, 0%, 100%, .01);
-    backdrop-filter: blur(10px);
-    
-}
+      font-family: 'League Spartan', sans-serif;
 
-span {
-    color: salmon
-}
+  }
 
-span:nth-child(1) {
-    color: salmon;
-    animation: first_letter 2s ease-in-out  infinite ;
-    display: inline-block;
-    
-}
-
-@keyframes first_letter {
-   
-    from{
-        transform: scale(1);
-        
-    }
-    to{
-        transform: scale(1.1);    
-    }
-}
-
-.Explore_btn {
-    display: inline-block;
-    background-color: aqua;
-    font-size: 20px;
-    border-radius: 4.8rem;
-    padding: 1rem 2.8rem;
-    color: #000;
-    text-decoration-line: none;
-    font-family: 'League Spartan', sans-serif;
-    box-shadow: 0 0 1rem cyan;
-    transition: 0.5 ease;
-    
-}
-
-.Explore_btn:hover {
-    box-shadow: none;
-}
-
-/* About page  */
-
-.about_page {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background: #61A3BA;
-    background-size: cover;
-
-}
-
-.nav_bar {
-    position: fixed;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 20px;
-    top: 20px;
-    right:20px;
-    z-index: 1000;
-    
-    
-}
+  .home_page {
+      width: 100%;
+      height: 100vh;
+      color: #fff;
+      background: no-repeat url(images/background.jpg);
+      background-size: cover;
 
 
-.nav_bar a {
-    display: inline-block;
-    border-radius: 15px;
-    padding: 10px 20px;
-    color: #000;
-    text-decoration: none;
-    font-family: 'League Spartan', sans-serif;
-    transition: 0.5 ease;
-    font-size: 1.3rem;
-    z-index: 100;  
-}
+  }
 
-.nav_bar a:hover {
-    box-shadow: 0 0 1rem  rgb(252, 255, 26); 
-    background: linear-gradient(109.6deg, rgb(252, 255, 26) 34.9%, rgb(66, 240, 233) 82.5%); 
-    border: 2px solid #000; 
-    border-radius: 30px;
-}
+  .home_content {
+      position: absolute;
+      top: 175px;
+      left: 380px;
+      display: flex;
+      flex-direction: column;
+      width: 600px;
+      height: 300px;
+      border: 2px solid hsla(0, 0%, 100%, .15);
+      border-radius: 20px;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      color: cyan;
+      font-size: 30px;
+      font-family: 'League Spartan', sans-serif;
+      background-color: hsla(0, 0%, 100%, .01);
+      backdrop-filter: blur(10px);
 
-.nav_bar .download_cv{
-    background: linear-gradient(109.6deg, rgb(252, 255, 26) 34.9%, rgb(66, 240, 233) 82.5%);
-    box-shadow: 0 0 1rem   rgb(252, 255, 26);
-    border: 2px solid #000;
-    border-radius: 30px;
+  }
 
-}
-.nav_bar .download_cv:hover{
-    box-shadow: none;
-    color: #000;
-    color: #000;
-    background: transparent;
-}
+  span {
+      color: salmon
+  }
 
-.about_content {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+  span:nth-child(1) {
+      color: salmon;
+      animation: first_letter 2s ease-in-out infinite;
+      display: inline-block;
 
- .my_image img {
-    position:absolute;
-    width: auto;
-    height: 50vh;
-    top: 200px;
-    left: 100px;
-    border-radius: 50%;
-    border: 10px solid #9acd32;
- }
+  }
 
- .skill {
-    position: absolute;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
-    grid-gap: 20px;
-    width: 500px;
-    font-size: 130px;
-    left:700px;
-    top: 120px;
-    z-index: 100;
- }
+  @keyframes first_letter {
 
- .skill i {
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background: transparent;
-    width: 8rem;
-    height: 8rem;
-    color:  rgb(252, 255, 26);
-    border: 4px solid  rgb(252, 255, 26);
-    padding: 5px 5px;
- }
+      from {
+          transform: scale(1);
 
- .skill i:hover {
-    background: linear-gradient(109.6deg, rgb(252, 255, 26) 34.9%, rgb(66, 240, 233) 82.5%);
-    color: #323946;
-    box-shadow: 0 0 16px rgb(252, 255, 26);
- }
+      }
 
- /* project section Design */
- .project_page {
-    position: absolute;
-    top: 200vh;
-    width: 100%;
-    height: 200vh;
-    background: #A2C579;
-    background-size: cover;
-   
-    
-}
+      to {
+          transform: scale(1.1);
+      }
+  }
 
-.project_container {
-    position: absolute;
-    display: flex;
-    width: 80% ;
-    top: 100px;
-    left: 100px;
-    flex-direction: column;
-    gap: 100px;
-}
+  .Explore_btn {
+      display: inline-block;
+      background-color: aqua;
+      font-size: 20px;
+      border-radius: 4.8rem;
+      padding: 1rem 2.8rem;
+      color: #000;
+      text-decoration-line: none;
+      font-family: 'League Spartan', sans-serif;
+      box-shadow: 0 0 1rem cyan;
+      transition: 0.5 ease;
 
-.first_project {
-    display: flex;
-    width: 100%;
-    position: relative;
-    gap: 30px;
-    justify-content: flex-start space-between;
-    padding: 0px 20px 0px 10px;
-    
-}
+  }
 
-.first_project_content{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-}
+  .Explore_btn:hover {
+      box-shadow: none;
+  }
 
-.first_project img{
-    border-radius: 50%;
-    padding: 10px;   
-}
+  /* About page  */
 
-.project_button{
-    display: flex;
-    gap: 20px;
-    width: 100%;
-    height: 6vh; 
+  .about_page {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      background: #61A3BA;
+      background-size: cover;
 
-}
+  }
 
-.btn {
-    padding: 10px ;
-    border-radius: 50px;
-}
-
-.second_project {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    position: relative;
-    gap: 20px;
-    justify-content:space-between;
-    padding: 0px 0px 0px 30px;
-    
-    
-}
-
-.second_project_content{
-    position: relative;
-    display: flex;
-    flex-direction: column ;
-    gap: 20px;
-    width: 100%;
-}
-
-.second_project img{
-    border-radius: 50%;
-    padding: 10px;   
-    border:  #9acd32;
-}
-
-.project_button{
-    display: flex;
-    gap: 20px;
-    width: 100%;
-    height: 6vh;
-     
-
-}
-
-.btn {
-    padding: 10px ;
-    border-radius: 50px;
-    background: linear-gradient(109.6deg, rgb(252, 255, 26) 34.9%, rgb(66, 240, 233) 82.5%);
-}
-
-.btn:hover {
-    box-shadow: 0 0 16px green;
-    background: transparent;
-}
-
-/* Contact Page Design */
-.contactpage{
-    width: 100%;
-    height: 100vh;
-    background: #67729D;
-    margin-top: 300vh;
-    z-index: 1000;
-    
-}
-
-.contact_container{
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    width: 100%;
-    height: 80vh;
-    margin-top: 15vh;
-}
-.contact_form{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: 500px;
-    width: 700px;
-    position: relative;
-    color:black;
-    padding: 20px;
-    background-color: hsla(0, 0%, 100%, .01);
-    backdrop-filter: blur(10px);
-    border: 2px solid hsla(0, 0%, 100%, .15);
-}
-
-.contact_form:hover{
-    border: black 3px solid;
-    background-color: palevioletred;
-
-}
+  .nav_bar {
+      position: fixed;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 20px;
+      top: 20px;
+      right: 20px;
+      z-index: 1000;
 
 
-.sociallink {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    font-size: 40px;
-}
+  }
 
-.sociallink a {
-    display: inline-flex;
-    height: 64px;
-    width: 64px;
-    border-radius: 50%;
-    background: transparent;
-    color:  rgb(26, 171, 255);
-    border: 2px solid #000;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    transition: .3s;  
-}
 
-.sociallink .instagram:hover{
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-    box-shadow: 0 0 16px #cc2366;
-    color: #fff;
-    border: 2px solid #fff;
-}
+  .nav_bar a {
+      display: inline-block;
+      border-radius: 15px;
+      padding: 10px 20px;
+      color: #000;
+      text-decoration: none;
+      font-family: 'League Spartan', sans-serif;
+      transition: 0.5 ease;
+      font-size: 1.3rem;
+      z-index: 100;
+  }
 
-.sociallink .facebook:hover{
-    background: #1877f2;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    box-shadow: 0 0 16px #1877f2;
-}
+  .nav_bar a:hover {
+      box-shadow: 0 0 1rem rgb(252, 255, 26);
+      background: linear-gradient(109.6deg, rgb(252, 255, 26) 34.9%, rgb(66, 240, 233) 82.5%);
+      border: 2px solid #000;
+      border-radius: 30px;
+  }
 
-.sociallink .linkedin:hover{
-    background: #0a66c2;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    box-shadow: 0 0 16px #1877f2;
-}
+  .nav_bar .download_cv {
+      background: linear-gradient(109.6deg, rgb(252, 255, 26) 34.9%, rgb(66, 240, 233) 82.5%);
+      box-shadow: 0 0 1rem rgb(252, 255, 26);
+      border: 2px solid #000;
+      border-radius: 30px;
 
-.sociallink .twitter:hover{
-    background: #ffffff;
-    color: #000000;
-    border: 2px solid #000000;
-    box-shadow: 0 0 16px #000000;
-}
+  }
 
+  .nav_bar .download_cv:hover {
+      box-shadow: none;
+      color: #000;
+      color: #000;
+      background: transparent;
+  }
+
+  .about_content {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .my_image img {
+      position: absolute;
+      width: auto;
+      height: 50vh;
+      top: 200px;
+      left: 100px;
+      border-radius: 50%;
+      border: 10px solid #9acd32;
+  }
+
+  .skill {
+      position: absolute;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 20px;
+      width: 500px;
+      font-size: 130px;
+      left: 700px;
+      top: 120px;
+      z-index: 100;
+  }
+
+  .skill i {
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background: transparent;
+      width: 8rem;
+      height: 8rem;
+      color: rgb(252, 255, 26);
+      border: 4px solid rgb(252, 255, 26);
+      padding: 5px 5px;
+  }
+
+  .skill i:hover {
+      background: linear-gradient(109.6deg, rgb(252, 255, 26) 34.9%, rgb(66, 240, 233) 82.5%);
+      color: #323946;
+      box-shadow: 0 0 16px rgb(252, 255, 26);
+  }
+
+  /* project section Design */
+  .project_page {
+      position: absolute;
+      top: 200vh;
+      width: 100%;
+      height: 200vh;
+      background: #A2C579;
+      background-size: cover;
+
+
+  }
+
+  .project_container {
+      position: absolute;
+      display: flex;
+      width: 80%;
+      top: 100px;
+      left: 100px;
+      flex-direction: column;
+      gap: 100px;
+  }
+
+  .first_project {
+      display: flex;
+      width: 100%;
+      position: relative;
+      gap: 30px;
+      justify-content: flex-start space-between;
+      padding: 0px 20px 0px 10px;
+
+  }
+
+  .first_project_content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+  }
+
+  .first_project img {
+      border-radius: 50%;
+      padding: 10px;
+  }
+
+  .project_button {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      height: 6vh;
+
+  }
+
+  .btn {
+      padding: 10px;
+      border-radius: 50px;
+  }
+
+  .second_project {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 100%;
+      position: relative;
+      gap: 20px;
+      justify-content: space-between;
+      padding: 0px 0px 0px 30px;
+
+
+  }
+
+  .second_project_content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+  }
+
+  .second_project img {
+      border-radius: 50%;
+      padding: 10px;
+      border: #9acd32;
+  }
+
+  .project_button {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      height: 6vh;
+
+
+  }
+
+  .btn {
+      padding: 10px;
+      border-radius: 50px;
+      background: linear-gradient(109.6deg, rgb(252, 255, 26) 34.9%, rgb(66, 240, 233) 82.5%);
+  }
+
+  .btn:hover {
+      box-shadow: 0 0 16px green;
+      background: transparent;
+  }
+
+  /* Contact Page Design */
+  .contactpage {
+      width: 100%;
+      height: 100vh;
+      background: #67729D;
+      margin-top: 300vh;
+      z-index: 1000;
+  }
+
+  .contact_container {
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+      height: 40vh;
+      margin-top: 5vh;
+  }
+
+  .contactt {
+      position: relative;
+      top: 225px;
+      text-align: center;
+      color: white;
+      /* background-color: hsla(0, 0%, 100%, .01);
+      backdrop-filter: blur(10px);
+      border: 2px solid hsla(0, 0%, 100%, .15); */
+      
+  }
+
+  .contactt h1 {
+      margin-bottom: 20px;
+  }
+
+  .contactt table {
+      position: relative;
+      left: 40%;
+      text-align: left;
+      padding-bottom: 10px;
+  }
+
+  .contactt table td {
+    padding: 5px;
+  }
+
+  #myForm {
+      background-color: transparent;
+      border: none;
+      padding: 20px;
+  }
+
+  #myForm input,
+  #myForm textarea,
+  #myForm button {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+  }
+
+
+
+  .sociallink {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      font-size: 30px;
+      top: 20px;
+  }
+
+  .sociallink a {
+      display: inline-flex;
+      height: 44px;
+      width: 44px;
+      border-radius: 50%;
+      background: transparent;
+      color: #fff;
+      border: 2px solid #000;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      transition: .3s;
+  }
+
+  .sociallink .instagram:hover {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      box-shadow: 0 0 16px #cc2366;
+      color: #fff;
+      border: 2px solid #fff;
+  }
+
+  .sociallink .facebook:hover {
+      background: #1877f2;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+      box-shadow: 0 0 16px #1877f2;
+  }
+
+  .sociallink .linkedin:hover {
+      background: #0a66c2;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+      box-shadow: 0 0 16px #1877f2;
+  }
+
+  .sociallink .twitter:hover {
+      background: #ffffff;
+      color: #000000;
+      border: 2px solid #000000;
+      box-shadow: 0 0 16px #000000;
+  }
+
+  .table-btn {
+      border-radius: 10px;
+      padding: 10px;
+    border: 1px solid #333;
+      position: relative;
+      top: 15px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+  }
+
+  .table-btn:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+
+  }
